@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
-@import '~normalize.css/normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap");
+@import "~normalize.css/normalize.css";
 
 * {
   /* border: 1px solid black; */
@@ -23,7 +23,7 @@ body {
 }
 body {
   display: flex;
-  font-family: 'Libre Franklin';
+  font-family: "Libre Franklin";
   color: white;
 }
 
@@ -39,7 +39,7 @@ body {
   flex-direction: column;
 }
 
-#utilities * {
+#search-form * {
   flex-grow: 1;
 }
 
@@ -61,7 +61,7 @@ body {
 
 #utilities form button {
   all: unset;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
   font-size: 120%;
 }
 
@@ -69,7 +69,7 @@ body {
   color: teal;
 }
 
-#utilities input[type='text'] {
+#utilities input[type="text"] {
   border: none;
   background-image: none;
   background-color: transparent;
@@ -81,7 +81,7 @@ body {
   padding-bottom: 0.2rem;
   display: inline-flex;
   align-items: center;
-  height: 100%;
+  height: 2rem;
   color: white;
   line-height: normal;
 }
@@ -90,7 +90,7 @@ body {
   color: white;
 }
 
-#utilities input[type='text']:focus {
+#utilities input[type="text"]:focus {
   outline: none;
 }
 
@@ -102,7 +102,7 @@ body {
   width: 4rem;
   max-height: 2rem;
   min-height: 2rem;
-  background-color: rgba(5, 205, 255, 0.185);
+  background-color: rgba(5, 205, 255, 0.349);
 }
 
 #utilities #temp-toggle-check {
@@ -147,13 +147,11 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 #current #city {
   font-size: 3.5rem;
-    font-weight: bold;
-
+  font-weight: bold;
 }
 
 #current #des {
@@ -186,9 +184,9 @@ body {
   display: grid;
   grid-template-rows: 15% 45% 15%;
   grid-template-areas:
-    'time'
-    'img'
-    'temp';
+    "time"
+    "img"
+    "temp";
   place-items: center center;
   align-content: center;
 }
@@ -207,30 +205,31 @@ body {
 #weekly-forecast {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: flex-start;
 }
 
 #weekly-forecast .weekly-item {
+  /* width: 50%;  */
   width: 100%;
+  padding: 0;
   display: flex;
   align-items: center;
-  height: 20%;
+  height: 26%;
   justify-content: center;
 }
-.weekly-item div:first-child {
-  width: 18%;
+
+#weekly-forecast .weekly-item .day {
+  width: 9ch;
 }
 
-
-.weekly-item div:last-child {
-  padding-left: 20px;
-
+#weekly-forecast .weekly-item .min,
+.max {
+  width: 5ch;
+  /* text-align: center; */
 }
-
 
 .weekly-item img {
-  transform: scale(0.8);
+  transform: scale(0.6);
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -241,7 +240,8 @@ body {
   }
 
   .weekly-item div:last-child {
-    padding-left: 30px;}
+    padding-left: 30px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -262,13 +262,27 @@ body {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+ 
+  .container {
+    grid-template-rows: 6% 22% 5% 20% 47%;
+  }
+
   .container {
     /* background-color: rgba(255, 255, 0, 0.13); */
     margin: 0 150px;
   }
-
-
   #utilities form {
+    margin-left: -90%;
+  }
+  #utilities #temp-toggle-bar {
+    margin-top: -2rem;
+    margin-right: -2rem;
+  }
+  .weekly-item img {
+    transform: scale(0.8);
+  }
+
+  /* #utilities form {
     margin-left: -800px;
     width: 40%;
   }
@@ -277,7 +291,8 @@ body {
     margin-right: 10px;
   }
   .weekly-item div:last-child {
-    padding-left: 50px;}
+    padding-left: 50px;
+  } */
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
