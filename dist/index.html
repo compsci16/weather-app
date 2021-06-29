@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/f19ce047fe.js" crossorigin="anonymous"></script>
+<script defer src="bundle.js"></script></head>
+
+<body>
+    <div class='container'>
+        <div id='utilities'>
+            <form id='search-form'>
+                <input type='text' id='search' placeholder="Search" value="London" autocomplete="off">
+                <button type="submit" id='search-submit'><i class="fas fa-search"></i></button>
+            </form>
+            <div id='temp-toggle-bar'>
+                <input type='checkbox' id='temp-toggle-check'>
+                <label for='temp-toggle-check' id='temp-toggle-label'>
+                    <div>F</div>
+                    <div>C</div>
+                </label>
+            </div>
+        </div>
+        <div id='current'>
+            <div id='city'>New York</div>
+            <div id='des'>Pretty Cloudy</div>
+            <div id='current-temp' class='current-temp'>28 &deg;C</div>
+        </div>
+        <div id='today'>
+            <div id='today-day'>Wednesday</div>
+            <div>Today</div>
+            <div id='today-max' class='temp'>84</div>
+            <div id='today-min' class='temp'>64</div>
+        </div>
+        <ul id='today-forecast'>
+            <li class='today-item'>
+                <div class='time'>Time</div>
+                <span> <img class='icon'></span>
+                <div class='temp'>Temp</div>
+            </li>
+            <li class='today-item'>
+                <div class='time'>Time</div>
+                <span> <img class='icon'></span>
+                <div class='temp'>Temp</div>
+            </li>
+            <li class='today-item'>
+                <div class='time'>Time</div>
+                <span> <img class='icon'></span>
+                <div class='temp'>Temp</div>
+            </li>
+            <li class='today-item'>
+                <div class='time'>Time</div>
+                <span> <img class='icon'></span>
+                <div class='temp'>Temp</div>
+            </li>
+            <li class='today-item'>
+                <div class='time'>Time</div>
+                <span> <img class='icon'></span>
+                <div class='temp'>Temp</div>
+            </li>
+        </ul>
+        <div id='weekly-forecast'>
+            <div class="weekly-item">
+                <div class='day'>Day</div>
+                <img class='icon'>
+                <div class='max temp'>Max</div>
+                <div class='min temp'>Min</div>
+            </div>
+            <div class="weekly-item">
+                <div class='day'>Day</div>
+                <img class='icon'>
+                <div class='max temp'>Max</div>
+                <div class='min temp'>Min</div>
+            </div>
+            <div class="weekly-item">
+                <div class='day'>Day</div>
+                <img class='icon'>
+                <div class='max temp'>Max</div>
+                <div class='min temp'>Min</div>
+            </div>
+            <div class="weekly-item">
+                <div class='day'>Day</div>
+                <img class='icon'>
+                <div class='max temp'>Max</div>
+                <div class='min temp'>Min</div>
+            </div>
+            <div class="weekly-item">
+                <div class='day'>Day</div>
+                <img class='icon'>
+                <div class='max temp'>Max</div>
+                <div class='min temp'>Min</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
