@@ -9,7 +9,7 @@ function getTime(utc) {
 
 function fetchCoords(cityName) {
   return fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${API_KEY}`,
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${API_KEY}`,
   )
     .then((response) => response.json())
     .then((data) => {

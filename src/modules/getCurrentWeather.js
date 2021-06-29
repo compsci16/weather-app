@@ -2,7 +2,7 @@ const API_KEY = '8126b905d6c992123f033e88e0c0bc59';
 
 export default function getCurrentWeather(cityName) {
   return fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`,
+    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`,
   )
     .then((res) => {
       return res.json();

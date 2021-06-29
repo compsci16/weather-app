@@ -1,5 +1,4 @@
 node_modules
 .eslintignore
-dist
 dump.js
 .prettierrc
